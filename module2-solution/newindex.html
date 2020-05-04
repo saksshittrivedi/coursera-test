@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>module 2</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  padding: 0px;
+}
+h1{
+      font-family: "Times New Roman";
+      font-weight: bold;
+      text-align: center; 
+      font-size: 175%;
+      margin-bottom: 15px;
+    }
+
+/*p {
+  
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: black;
+  padding: 10px;
+}*/
+
+/* Simple Responsive Framework. */
+.row{
+      background-color: yellow;
+      width: 100%; 
+    }
+    .box{
+    background-color: gray;
+    margin-bottom: 10px;  }
+    .style{
+      background-color: gray;
+      color :black;
+      font-family:Arial, sans-serif;
+      font-style:italic;
+      padding: 10px 10px 0px 10px;
+      margin: 0px 0px 0px 0px;
+
+    }
+.section
+    {
+      float: right;
+      background-color: red;
+      color: white;
+      border: 1px solid black;
+      text-align: center;
+      padding: 2px;
+      width: 100px; 
+
+
+    }
+
+    
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4, .row,.box,.style ,.section{
+    float: left;
+  }
+  .row{
+    background-color: yellow;
+    width: 100%;
+  }
+  .box{
+    background-color: gray;
+    margin: 30px 0px 0px 0px;
+  }
+
+    .style{
+      background-color: gray;
+      color :black;
+      font-family:Arial, sans-serif;
+      font-style:italic;
+
+    }
+
+  .section
+    {
+      float: right;
+      background-color: red;
+      color: white;
+      border: 1px solid black;
+      text-align: center;
+      padding: 2px;
+      margin: 0;
+      width: 100px; 
+
+
+    }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6,.row,.box,.style ,.section{
+    float: left;}
+    .row{
+    background-color: yellow;
+    width: 100%;
+  }
+  .box{
+    background-color: gray;
+    margin: 30px 0px 0px 0px;
+  }
+    .style{
+      background-color: gray;
+      color :black;
+      font-family:Arial, sans-serif;
+      font-style:italic;
+
+    }
+
+  .section
+    {
+      float: right;
+      background-color: red;
+      color: white;
+      border: 1px solid black;
+      text-align: center;
+      padding: 2px;
+      margin: 0;
+      width: 100px; 
+
+
+    }
+
+  .col-md-6 {
+    width: 50%;
+  }
+  
+}
+
+/*small devices only*/
+/*@media(min-width: 767px){
+  .col-sm-12{
+    float: left;
+    border: 1px  solid green;
+  }
+  .col-sm-12{
+    width: 100%;
+  }
+}
+*/
+</style>
+</head>
+<body>
+<h1>Our Menu</h1>
+
+<div class="row">
+  <div class="box col-lg-4 col-md-6 col-sm-12"><p class="style"><section class="section">Chicken</section>OPTIONAL) You will NOT be graded on this, but you may want to explicitly set a font-family for the text in your page, so you are not stuck with the default browser font family.</p></div>
+  <div class="box col-lg-4 col-md-6 col-sm-12"><p class="style">
+  <section class="section">Salmon</section>OPTIONAL) You will NOT be graded on this, but you may want to explicitly set a font-family for the text in your page, so you are not stuck with the default browser font family.</p></div>
+  <div class="box col-lg-4 col-md-6 col-sm-12 "><p class="style"><section class="section">Mango</section>OPTIONAL) You will NOT be graded on this, but you may want to explicitly set a font-family for the text in your page, so you are not stuck with the default browser font family.</p></div>
+</div>
+
+</body>
+</html>
